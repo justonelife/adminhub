@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--color-background);
+  color: var(--color-foreground);
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.sidebar li+li {
+  margin-top: 1rem;
+}
+
+.sidebar a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* COLLAPSED STATE */
+.sidebar.collapsed {
+  width: var(--sidebar-collapsed-width);
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  background: var(--color-background);
+  position: relative;
+  padding: 1rem;
+  transition: margin-left 0.3s ease;
+}
+
+
+/* ICON-ONLY LINKS when collapsed */
+.sidebar.collapsed a {
+  text-align: center;
+}
+
+.sidebar.collapsed li {
+  padding: 0.5rem 0;
+}
+
+/* (Optional) hide link text on collapse */
+.sidebar.collapsed a::before {
+  content: attr(data-icon);
+  display: inline-block;
+}
+
+.sidebar.collapsed a span {
+  display: none;
+}

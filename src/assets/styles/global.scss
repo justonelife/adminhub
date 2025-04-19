@@ -1,0 +1,17 @@
+@use "./variables";
+@use "./mixins";
+@use "./layouts/layout.scss";
+
+// @include mixins.export-root-variables(variables.$theme-colors, "color");
+// @include mixins.export-root-variables(variables.$border-radius, "radius");
+// @include mixins.export-root-variables(variables.$spacing, "spacing");
+// @include mixins.export-root-variables(layout.$sidebar, "sidebar");
+
+$export-config: (
+  'color': variables.$theme-colors,
+  'spacing': variables.$spacing,
+  'radius': variables.$border-radius,
+  'sidebar': layout.$sidebar,
+);
+
+@include mixins.export-root-from-config($export-config);

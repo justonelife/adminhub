@@ -44,3 +44,51 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Project Structure
+
+Below is an overview of the key folders and files in this repo:
+
+```plaintext
+src
+├── assets                # Static assets (images, icons, global styles)
+│   ├── images
+│   ├── icons
+│   └── styles
+│       ├── global.scss        # Global styles (reset, typography, variables)
+│       ├── _variables.scss    # Variables (colors, font sizes, breakpoints)
+│       └── _mixins.scss       # Reusable SCSS mixins
+├── components            # Reusable UI components
+│   ├── Button
+│   │   ├── Button.js
+│   │   └── Button.module.css  # CSS Module for Button
+│   └── Input
+│       ├── Input.js
+│       └── Input.module.css   # CSS Module for Input
+├── pages                 # Application pages or screens
+│   ├── Home
+│   │   ├── Home.js
+│   │   └── Home.module.css
+│   └── About
+│       ├── About.js
+│       └── About.module.css
+├── services              # API calls and service functions
+│   └── api.js
+├── store                 # Global state management (Redux or Context)
+│   ├── actions
+│   ├── reducers
+│   └── store.js             # Store configuration
+├── hooks                 # Custom React hooks
+│   ├── useAuth.js           # Authentication hook
+│   └── useFetch.js          # Data fetching hook
+├── utils                 # Utility functions
+│   ├── formatDate.js        # Date formatting
+│   └── validateInput.js     # Input validation
+├── App.js                # Root application component
+├── index.js              # Entry point (renders App)
+├── setupTests.js         # Test setup (Jest / React Testing Library)
+├── .env                  # Environment variables (e.g., API_URL)
+├── .gitignore            # Git ignore rules
+├── package.json          # Project dependencies & scripts
+└── README.md             # Project documentation
+```

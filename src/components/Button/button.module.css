@@ -1,0 +1,7 @@
+.ah-button {
+  padding: var(--spacing-1) var(--spacing-3);
+  color: var(--color-secondary-foreground);
+  background: var(--color-secondary);
+  border-radius: var(--border-radius-md);
+  border-color: var(--color-border);
+}
