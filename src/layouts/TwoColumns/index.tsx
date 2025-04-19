@@ -1,4 +1,5 @@
 import Button from "components/Button";
+import PrimaryButton from "components/PrimaryButton";
 import AppRoutes from "routes/routes";
 import styles from './two-columns.module.css';
 
@@ -24,7 +25,8 @@ export default function TwoColumnsLayout() {
           </ul>
         </aside>
         <main className={styles['main-content']}>
-          <Button click={toggleSidebar}>toggle</Button>
+          <Button click={toggleSidebar} label="Cancel" />
+          <PrimaryButton click={toggleSidebar} label="Submit" />
           <section>
             <h1>Main Content</h1>
             <AppRoutes />

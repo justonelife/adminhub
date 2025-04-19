@@ -1,4 +1,4 @@
 .ah-button--primary {
-  background: var(--color-primary);
-  color: var(--color-primary-foreground);
+  background: var(--color-primary) !important;
+  color: var(--color-primary-foreground) !important;
 }

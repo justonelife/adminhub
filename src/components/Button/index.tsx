@@ -1,14 +1,16 @@
 import styles from './button.module.css';
 
 export interface ButtonProps {
-  click: () => void;
+  click?: () => void;
   type?: 'button' | 'submit' | 'reset';
-  children?: string;
+  size?: 'small' | 'medium' | 'large';
+  label?: string;
   className?: string;
 }
-export default function Button({ click, type = 'button', children = '', className = '' }: ButtonProps) {
+
+export default function Button({ click, type = 'button', label = '', className = '', size = 'medium' }: ButtonProps) {
 
   return (
-    <button type={type} onClick={click} className={styles['ah-button'] + ' ' + className}>{children}</button>
+    <button type={type} onClick={click} className={styles['ah-button'] + ' ' + styles['ah-button--' + size] + ' ' + className}>{label}</button>
   );
 }

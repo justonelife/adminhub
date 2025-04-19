@@ -1,6 +1,8 @@
 import Button, { ButtonProps } from "components/Button";
-export default function PrimaryButton({ click, type, children, className }: ButtonProps) {
+import styles from './primary-button.module.css';
+
+export default function PrimaryButton({ click, type, label, className }: ButtonProps) {
   return (
-    <Button type={type} click={click} children={children} className={className} />
+    <Button type={type} click={click} label={label} className={styles['ah-button--primary'] + ' ' + className} />
   );
 }
