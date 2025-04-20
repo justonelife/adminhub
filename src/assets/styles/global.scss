@@ -1,6 +1,7 @@
 @use "./variables";
 @use "./mixins";
 @use "./layouts/layout.scss";
+@use "./components";
 
 // @include mixins.export-root-variables(variables.$theme-colors, "color");
 // @include mixins.export-root-variables(variables.$border-radius, "radius");

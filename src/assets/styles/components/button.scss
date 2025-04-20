@@ -1,0 +1,34 @@
+.ah-button {
+  color: var(--color-secondary-foreground);
+  background: var(--color-secondary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  font-weight: bold;
+  cursor: pointer;
+
+  &>svg {
+    vertical-align: middle;
+  }
+
+  &--small {
+    padding: var(--spacing-1) var(--spacing-3);
+  }
+
+  &--medium {
+    padding: var(--spacing-2) var(--spacing-4);
+  }
+
+  &--large {
+    padding: var(--spacing-3) var(--spacing-6);
+  }
+
+  &.ah-button--text {
+    border-color: transparent;
+    background: transparent;
+  }
+
+  &--primary {
+    background: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+}

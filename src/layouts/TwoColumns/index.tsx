@@ -1,13 +1,14 @@
+import { SidebarSimple } from "@phosphor-icons/react";
 import Button from "components/Button";
-import PrimaryButton from "components/PrimaryButton";
+import { ReactElement } from "react";
 import AppRoutes from "routes/routes";
 import styles from './two-columns.module.css';
 
-export default function TwoColumnsLayout() {
+export default function TwoColumnsLayout(): ReactElement {
   function toggleSidebar(): void {
     console.log('toggle');
-
   }
+
   return (
     <>
       <div className={styles.container}>
@@ -25,8 +26,8 @@ export default function TwoColumnsLayout() {
           </ul>
         </aside>
         <main className={styles['main-content']}>
-          <Button click={toggleSidebar} label="Cancel" />
-          <PrimaryButton click={toggleSidebar} label="Submit" />
+          <Button click={toggleSidebar} text={true} icon={<SidebarSimple size={16} weight='bold' />} />
+
           <section>
             <h1>Main Content</h1>
             <AppRoutes />
