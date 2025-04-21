@@ -5,6 +5,11 @@
   border: 1px solid var(--color-border);
   font-weight: bold;
   cursor: pointer;
+  transition: all var(--transition-time) var(--transition-type);
+
+  &:hover {
+    background: var(--color-secondary-hover) !important;
+  }
 
   &>svg {
     vertical-align: middle;

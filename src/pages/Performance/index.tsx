@@ -1,5 +1,7 @@
 export default function Performance() {
   return (
-    <div>performance</div>
+    <h1>
+      Performance Analytics
+    </h1>
   );
 }

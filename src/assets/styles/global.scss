@@ -13,6 +13,32 @@ $export-config: (
   'spacing': variables.$spacing,
   'radius': variables.$border-radius,
   'sidebar': layout.$sidebar,
+  'transition': variables.$transition,
+  'font': variables.$font,
 );
 
 @include mixins.export-root-from-config($export-config);
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: var(--spacing-2);
+}

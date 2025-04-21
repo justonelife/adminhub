@@ -1,5 +1,7 @@
 export default function Workflow() {
   return (
-    <div>workflow</div>
+    <h1>
+      Workflow Management
+    </h1>
   );
 }

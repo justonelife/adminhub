@@ -3,6 +3,7 @@ $theme-colors: (
   "primary-foreground": "#FAFAFA",
   "secondary": "#FFFFFF",
   "secondary-foreground": "#09090B",
+  "secondary-hover": "#F4F4F5",
   "background": "#FFFFFF",
   "foreground": "#0A0A0A",
   "muted": "#F1F5F9",
@@ -42,6 +43,25 @@ $spacing: (
   "16": 4rem,
 );
 
+$transition: (
+  "time": 0.3s,
+  "type": "ease",
+);
+
+$font: (
+  "size-xs": 0.75rem,
+  "size-sm": 0.875rem,
+  "size-base": 1rem,
+  "size-lg": 1.125rem,
+  "size-xl": 1.25rem,
+  "size-2xl": 1.5rem,
+  "size-3xl": 1.875rem,
+  "weight-normal": 400,
+  "weight-medium": 500,
+  "weight-semibold": 600,
+  "weight-bold": 700,
+);
+
 // // Chart colors
 // $chart-blue: #0088FE;
 // $chart-green: #00C49F;
@@ -57,19 +77,6 @@ $spacing: (
 //
 //
 //
-// // Typography
-// $font-sans: ui-sans-serif, system-ui, sans-serif;
-// $font-size-xs: 0.75rem;
-// $font-size-sm: 0.875rem;
-// $font-size-base: 1rem;
-// $font-size-lg: 1.125rem;
-// $font-size-xl: 1.25rem;
-// $font-size-2xl: 1.5rem;
-// $font-size-3xl: 1.875rem;
-// $font-weight-normal: 400;
-// $font-weight-medium: 500;
-// $font-weight-semibold: 600;
-// $font-weight-bold: 700;
 //
 // // Shadows (hex8 for alpha)
 // $shadow-sm: 0 1px 2px 0 #0000000D;

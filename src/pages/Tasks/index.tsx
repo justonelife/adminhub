@@ -1,5 +1,7 @@
 export default function Tasks() {
   return (
-    <div>tasks</div>
+    <h1>
+      Task Management
+    </h1>
   );
 }

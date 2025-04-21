@@ -1,14 +1,10 @@
 import Button, { ButtonProps } from "components/Button";
 
-export default function PrimaryButton({ click, type, label, className, icon, iconPosition, text }: ButtonProps) {
+export default function PrimaryButton({ className, ...props }: ButtonProps) {
   return (
-    <Button type={type}
-      click={click}
-      label={label}
+    <Button
       className={'ah-button--primary ' + className}
-      text={text}
-      icon={icon}
-      iconPosition={iconPosition}
+      {...props}
     />
   );
 }
